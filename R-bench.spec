@@ -4,7 +4,7 @@
 #
 Name     : R-bench
 Version  : 1.1.2
-Release  : 12
+Release  : 13
 URL      : https://cran.r-project.org/src/contrib/bench_1.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/bench_1.1.2.tar.gz
 Summary  : High Precision Timing of R Expressions
@@ -44,10 +44,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1638367407
+export SOURCE_DATE_EPOCH=1640896424
 
 %install
-export SOURCE_DATE_EPOCH=1638367407
+export SOURCE_DATE_EPOCH=1640896424
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -127,3 +127,5 @@ R CMD check --no-manual --no-examples --no-codoc bench || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/bench/libs/bench.so
+/usr/lib64/R/library/bench/libs/bench.so.avx2
+/usr/lib64/R/library/bench/libs/bench.so.avx512
