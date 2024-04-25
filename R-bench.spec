@@ -5,7 +5,7 @@
 #
 Name     : R-bench
 Version  : 1.1.3
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/bench_1.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/bench_1.1.3.tar.gz
 Summary  : High Precision Timing of R Expressions
